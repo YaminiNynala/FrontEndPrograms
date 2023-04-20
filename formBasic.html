@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .myDiv{
+        display:inline-block;
+        padding:0px;
+        margin:0px;
+      }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="myDiv" style="width: 100%; height: 45px; background-color: powderblue;">
+            <h2 style="color: blue; font-weight: bold;margin-top: 2px;" >Personal details</h2>
+        </div>
+
+        <div class="myDiv" style="width: 100%; height: 200px; background-color: beige;">
+            <label for="" style="padding-top: 100px; margin-left: 20px; font-size: large;">First Name</label> 
+            <input type="text" id="fn" style="margin-left: 200px; margin-top: 20px;" size="30">   
+        
+            <label for="" style="padding-top: 100px; margin-left: 230px;font-size: large;">Last Name</label> 
+            <input type="text" id="ln" size="30" style="margin-left: 200px; margin-top: 20px;"> 
+            <br>
+            <label for=""style="margin-left: 305px; ">Full name with min 3 char</label>  
+            <label for=""style="margin-left: 590px; ">Full name with min 2 char</label> 
+            <br>
+            <label for="" style="margin-left: 20px;font-size: large;">Date Of Birth</label>
+            <input placeholder="date" size="6" style="margin-left: 182px;">
+            <input placeholder="month" size="6">
+            <input placeholder="yyyy" size="6">
+        
+            <label for="" style="margin-left: 231px; font-size: large;" >Mobile Number</label>
+            <input type="" style="margin-left: 165px;" size="30">
+            <br>
+            <label for=""style="margin-left: 305px; ">Please choose valid DOB</label>  
+            <label for=""style="margin-left: 597px;">Please enter valid mobile number</label> 
+            <br>
+            <label for="" style="margin-left: 20px; font-size: large;">Mail ID</label>
+            <input type="email" size="30" style="margin-left: 222px;">
+        
+            <label for="" style="margin-left: 230px; font-size: large;">Land Number</label>
+            <input type="" size="30" style="margin-left: 180px;">
+            <br>
+            <label for=""style="margin-left: 305px; ">Enter valid Mail ID</label>  
+            <label for=""style="margin-left: 634px; ">Enter valid number (No optional)</label> 
+            <br>
+            <label for="" style="margin-left: 20px; font-size: large;">Gender</label>
+            <input type="radio" name="g" style="margin-left: 228px;">
+            <label for="">Male</label>
+            <input type="radio" name="g" style="margin-left: 12px;">
+            <label for="">Female</label>
+        </div>
+        <div class="myDiv" style="width: 100%; height: 45px; background-color: aqua;">
+            <h2 style="color: black; font-weight: bold;">General details</h2>
+        </div>
+
+        <div class="myDiv" style="width: 100%; height: 215px; background-color: beige;">
+            <label for="" style="padding-top: 100px; margin-left: 20px; font-size: large;">Educational Info</label> 
+            <select style="margin-top: 20px; margin-left: 165px; width: 248px;">
+                <option>--Select--</option>
+                <option>Post Graduation</option>
+                <option>Graduation</option>
+                <option>under Graduation</option>
+            </select>  
+
+            <label for="" style="padding-top: 100px; margin-left: 220px; font-size: large;">Marital Status</label> 
+            <select style=" margin-left: 185px; width: 248px;" >
+                <option>--Select--</option>
+                <option>Un-Married</option>
+                <option>Married</option>
+                <option>Divorced</option>
+            </select>  
+            <br>
+            <label for=""style="margin-left: 309px; ">Please Choose Valid Educational Info</label>  
+            <label for=""style="margin-left: 519px; ">Please Choose Valid Marital Status</label> 
+            <br>
+            <label for="" style="margin-left: 20px;font-size: large;">PAN Number</label>
+            <input type="" size="30" style="margin-left: 185px;">
+            <label for="" style="margin-left: 225px;font-size: large;">Door Number</label>
+            <input type="" size="30" style="margin-left: 185px;">
+            <br>
+            <label for=""style="margin-left: 309px; ">Please enter PAN number</label>  
+            <label for=""style="margin-left: 597px; ">Please enter door number</label>
+            <br>
+            <label for="" style="margin-left: 20px;font-size: large;">City / Village</label>
+            <input type="" size="30" style="margin-left: 185px;">
+            <label for="" style="margin-left: 225px;font-size: large;">Mandal / Town</label>
+            <input type="" size="30" style="margin-left: 177px;"> 
+            <br>
+            <label for=""style="margin-left: 309px; ">Please enter City / Village</label>  
+            <label for=""style="margin-left: 593px; ">Please enter Mandal / Town</label>
+            <br>
+            <label for="" style="margin-left: 20px;font-size: large;">District</label>
+            <input type="" size="30" style="margin-left: 228px;">
+            <label for="" style="margin-left: 225px;font-size: large;">State</label>
+            <input type="" size="30" style="margin-left: 249px;"> 
+            <br>
+            <label for=""style="margin-left: 309px; ">Please enter valid District</label>  
+            <label for=""style="margin-left: 593px; ">Please enter valid State</label>
+        </div>
+
+            <center><input type="submit" onclick="display_alert()" style="margin-top: 20px;"></center>
+        
+    </form>
+    <script>
+        function display_alert()
+        {
+            var a = document.getElementById("fn").value
+        var b = document.getElementById("ln").value
+        alert("Name : "+a+" "+b);
+        }
+    </script>
+    
+</body>
+</html>
