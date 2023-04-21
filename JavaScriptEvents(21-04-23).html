@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>MOUSE EVENTS</h2>
+    <input type="button" onclick="fun1()" value="click me!">
+    <p id="demo1"></p>
+
+    <input type="text" placeholder="Enter Anything" id="input" oninput="fun2()" >
+    <p id="demo2"></p>
+
+    <img src="./myImage.jpg" style="width: 230px;height: 200px;" alt="please check the path" onmouseover="fun3()" onmouseout="fun4()">
+    <p id="demo3&4"></p>
+
+    <p id="demo5&6" onmousedown="fun5()" onmouseup="fun6()">
+        If you hold the mouse button the color of the will be blue else it changes to green
+    </p>
+    <hr><hr>
+    <h2>KEYBOARD EVENTS</h2>
+    <input type="text" placeholder="Press any key" onkeydown="fun7()" onkeyup="fun8()">
+    <p id="demo7&8"></p>
+
+    <script>
+        function fun1()
+        {
+            document.getElementById("demo1").innerHTML="Hello, This is yamini Nynala."
+        }
+
+        function fun2()
+        {
+            var a = document.getElementById("input").value;
+            document.getElementById("demo2").innerHTML="you wrote : "+a;
+        }
+
+        function fun3()
+        {
+            document.getElementById("demo3&4").innerHTML="My Image"
+        }
+
+        function fun4()
+        {
+            document.getElementById("demo3&4").innerHTML="Over to the image"
+        }
+
+        function fun5()
+        {
+            document.getElementById("demo5&6").style.color="blue";
+        }
+
+        function fun6()
+        {
+            document.getElementById("demo5&6").style.color="green";
+        }
+
+        function fun7()
+        {
+            document.getElementById("demo7&8").innerHTML="You pressed a key inside the input field"
+        }
+
+        function fun8()
+        {
+            document.getElementById("demo7&8").innerHTML="press any key inside the input field"
+        }
+    </script>
+</body>
+</html>
